@@ -1,0 +1,67 @@
+/* Parallax background */
+.parallax-section {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Text shadow for important headings */
+.text-shadow {
+  text-shadow:
+    2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Sticky Header Shadow */
+header.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Scroll to Top Button Transition */
+#scrollToTopBtn {
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Pricing cards hover effect */
+#pricing .rounded-3xl:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Swiper overrides */
+.swiper {
+  padding-bottom: 60px;
+  user-select: none;
+}
+
+/* Override dark theme swiper controls */
+.dark .swiper-button-next,
+.dark .swiper-button-prev {
+  color: #a78bfa; /* Indigo-400 */
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+}
+
+/* Chat box input background */
+#chat-box input {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.dark #chat-box input {
+  background-color: #1f2937;
+  color: white;
+}
+
+/* Mobile nav */
+#mobileNav a {
+  transition: color 0.3s ease;
+}
+
+/* Accessibility enhancements */
+a:focus, button:focus, input:focus {
+  outline: 2px solid #6366f1; /* Indigo-500 */
+  outline-offset: 3px;
+}
